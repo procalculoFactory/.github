@@ -6,19 +6,19 @@
 <li>Backend senior, Desktop, ArcGIS, Arquitectura, Supervisión general</li>
 </ul>
 </li>
-<li><strong>🎯 FULLSTACK SENIOR</strong>: Andrés Carlos (@andres-c94)
+<li><strong>🎯 FULLSTACK  1</strong>: Andrés Carlos (@andres-c94)
 <ul>
-<li>Frontend lead, Backend de soporte, Supervisión de Brayan</li>
+<li>Frontend, Backend de soporte, Supervisión de Brayan</li>
 </ul>
 </li>
-<li><strong>⚙️ BACKEND JR</strong>: Brian Bohórquez (@bbohorquezs)
+<li><strong>⚙️ FULLSTACK 2</strong>: Brian Bohórquez (@bbohorquezs)
 <ul>
-<li>Backend junior, supervisión de Sebastián</li>
+<li>Backend, Frontend de soporte</li>
 </ul>
 </li>
-<li><strong>🎨 FRONTEND JR</strong>: Brayan Gerez (@bgerez)
+<li><strong>🎨 ARQUITECTURA CLOUD, INFRAESTRUCTURA, DEVELOPER JR</strong>: Brayan Gerez (@bgerez)
 <ul>
-<li>Frontend junior, supervisión de Andrés</li>
+<li>Cloud, AWS Scripts</li>
 </ul>
 </li>
 </ul>
