@@ -136,37 +136,24 @@ git pull origin main
 ### 🌟 Flujo Principal (Feature/BugFix)
 
 #### 1️⃣ Asegurarse que development está actualizado
-```bash
-git checkout development
-git pull origin development
-```
-#### 🔍 Métodos para verificar sincronización
-#### Método rápido - Comparar commits
 
-#### Actualizar referencias remotas primero
-```bash
-git fetch origin
-```
-#### Verificar si development está detrás de main
-```bash
-git log development..origin/main --oneline
-```
-📊 Interpretación:
 
-Sin output = development está actualizado ✅
-Muestra commits = development está desactualizado ❌
-
-#### 2️⃣ Verificar que main también está sync (buena práctica)
-```bash
-git checkout main 
-git pull origin main
-```
-
-#### 3️⃣ Volver a development como base
+Cambiar a development
 ```bash
 git checkout development
 ```
-
+Hacer merge de main en development
+```bash
+git merge main
+```
+Subir los cambios a GitHub
+```bash
+git push origin development
+```
+Verificar que estás en la rama correcta
+```bash
+git branch
+```
 #### 4️⃣ Crear branch desde development (NO desde main)
 
 **🆕 Para Features:**
