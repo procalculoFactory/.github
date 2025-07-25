@@ -1,55 +1,60 @@
-<html><head></head><body><h1>🚀 Flujo de Trabajo Completo - procalculoFactory</h1>
-<h2>👥 Estructura del Equipo</h2>
-<ul>
-<li><strong>👑 LÍDER TÉCNICO</strong>: Sebastián Díaz (@procalculoFactoryLeader)
-<ul>
-<li>Backend senior, Desktop, ArcGIS, Arquitectura, Supervisión general</li>
-</ul>
-</li>
-<li><strong>🎯 FULLSTACK  1</strong>: Andrés Carlos (@andres-c94)
-<ul>
-<li>Frontend, Backend de soporte, Supervisión de Brayan</li>
-</ul>
-</li>
-<li><strong>⚙️ FULLSTACK 2</strong>: Brian Bohórquez (@bbohorquezs)
-<ul>
-<li>Backend, Frontend de soporte</li>
-</ul>
-</li>
-<li><strong>🎨 ARQUITECTURA CLOUD, INFRAESTRUCTURA, DEVELOPER JR</strong>: Brayan Gerez (@bgerez)
-<ul>
-<li>Cloud, AWS Scripts</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2>📋 FASE 1: Llegada y Triaje de Issues</h2>
-<h3>1.1 Creación del Issue</h3>
-<p><strong>🎯 Quién puede crear issues:</strong></p>
-<ul>
-<li>Clientes/usuarios (bugs, feature requests)</li>
-<li>Product Owner/Manager</li>
-<li>Cualquier miembro del equipo</li>
-<li>QA/Testing team</li>
-</ul>
-<p><strong>📝 Proceso:</strong></p>
-<ol>
-<li>Ir al repositorio correspondiente</li>
-<li>Click en <strong>"New Issue"</strong></li>
-<li>Seleccionar template apropiado:
-<ul>
-<li>🐛 Bug Report (Frontend/Backend/Desktop)</li>
-<li>✨ Feature Request (Frontend/Backend/Desktop)</li>
-<li>👑 Technical Review (solo Sebastián)</li>
-<li>🔗 Cross-Project Issue (Sebastián)</li>
-<li>🔄 Backend Support (Fullstack)</li>
-<li>🔧 Jr Tasks</li>
-</ul>
-</li>
-</ol>
-<h3>1.2 Auto-asignación según Template</h3>
-<p><strong>⚡ Asignación automática:</strong></p>
-<pre><code>Frontend Issues → andres-c94
+# 🚀 Flujo de Trabajo Completo - procalculoFactory
+
+## 📋 Tabla de Contenido
+
+- [👥 Estructura del Equipo](#-estructura-del-equipo)
+- [📋 FASE 1: Llegada y Triaje de Issues](#-fase-1-llegada-y-triaje-de-issues)
+- [💻 FASE 2: Desarrollo](#-fase-2-desarrollo)
+- [📋 Flujo para atender un Issues](#-flujo-para-atender-un-issues)
+- [🎨 Mejores Prácticas para Pull Requests](#-mejores-prácticas-para-pull-requests)
+- [🔥 Flujo para HotFix](#-flujo-para-hotfix-urgente---producción)
+- [🏷️ Convenciones de Naming](#️-convenciones-de-naming)
+- [⚠️ Notas Importantes](#️-notas-importantes)
+
+---
+
+## 👥 Estructura del Equipo
+
+- **👑 LÍDER TÉCNICO**: Sebastián Díaz (@procalculoFactoryLeader)
+  - Backend senior, Desktop, ArcGIS, Arquitectura, Supervisión general
+
+- **🎯 FULLSTACK 1**: Andrés Carlos (@andres-c94)
+  - Frontend, Backend de soporte, Supervisión de Brayan
+
+- **⚙️ FULLSTACK 2**: Brian Bohórquez (@bbohorquezs)
+  - Backend, Frontend de soporte
+
+- **🎨 ARQUITECTURA CLOUD, INFRAESTRUCTURA, DEVELOPER JR**: Brayan Gerez (@bgerez)
+  - Cloud, AWS Scripts
+
+---
+
+## 📋 FASE 1: Llegada y Triaje de Issues
+
+### 1.1 Creación del Issue
+
+**🎯 Quién puede crear issues:**
+- Clientes/usuarios (bugs, feature requests)
+- Product Owner/Manager
+- Cualquier miembro del equipo
+- QA/Testing team
+
+**📝 Proceso:**
+1. Ir al repositorio correspondiente
+2. Click en **"New Issue"**
+3. Seleccionar template apropiado:
+   - 🐛 Bug Report (Frontend/Backend/Desktop)
+   - ✨ Feature Request (Frontend/Backend/Desktop)
+   - 👑 Technical Review (solo Sebastián)
+   - 🔗 Cross-Project Issue (Sebastián)
+   - 🔄 Backend Support (Fullstack)
+   - 🔧 Jr Tasks
+
+### 1.2 Auto-asignación según Template
+
+**⚡ Asignación automática:**
+```
+Frontend Issues → andres-c94
 Backend Issues → procalculoFactoryLeader  
 Desktop/ArcGIS → procalculoFactoryLeader
 Backend Fullstack → andres-c94
@@ -57,50 +62,51 @@ Jr Frontend Tasks → bgerez
 Jr Backend Tasks → bbohorquezs
 Technical Review → procalculoFactoryLeader
 Cross-Project → procalculoFactoryLeader
-</code></pre>
-<h3>1.3 Triaje Semanal (Lunes 9:00 AM)</h3>
-<p><strong>👑 Sebastián lidera el triaje:</strong></p>
-<ol>
-<li>
-<p><strong>Revisar issues <code>needs-triage</code></strong></p>
-</li>
-<li>
-<p><strong>Asignar prioridades:</strong></p>
-<ul>
-<li>🔴 <strong>Crítica</strong>: Bloquea producción/usuarios</li>
-<li>🟡 <strong>Alta</strong>: Afecta funcionalidad importante</li>
-<li>🟢 <strong>Media</strong>: Mejora significativa</li>
-<li>🔵 <strong>Baja</strong>: Nice to have</li>
-</ul>
-</li>
-<li>
-<p><strong>Estimar effort:</strong></p>
-<ul>
-<li>🟢 <strong>1-2 días</strong></li>
-<li>🟡 <strong>3-5 días</strong></li>
-<li>🔴 <strong>1+ semana</strong></li>
-<li>🟣 <strong>Épica</strong> (dividir en subtasks)</li>
-</ul>
-</li>
-<li>
-<p><strong>Asignar a Sprint actual o Backlog</strong></p>
-</li>
-</ol>
-<hr>
-<h2>💻 FASE 2: Desarrollo</h2>
-<h3>2.1 Tomar Ownership del Issue</h3>
-<p><strong>📋 El desarrollador asignado debe:</strong></p>
-<ol>
-<li><strong>Leer completamente el issue</strong></li>
-<li><strong>Comentar en el issue:</strong>
-<pre><code>🎯 Tomando ownership de este issue📅 ETA: [fecha estimada]❓ Preguntas: [si las hay]
-</code></pre></li>
-<li><strong>Cambiar label</strong> de <code>needs-triage</code> a <code>in-progress</code></li>
-<li><strong>Mover en GitHub Project</strong> a columna "In Progress"</li>
-</ol>
-<h3>2.2 Branching Strategy</h3>
-<p><strong>🌿 Convención de nombres:</strong></p>
-<pre><code class="language-bash"># Para features
+```
+
+### 1.3 Triaje Semanal (Lunes 9:00 AM)
+
+**👑 Sebastián lidera el triaje:**
+
+1. **Revisar issues `needs-triage`**
+
+2. **Asignar prioridades:**
+   - 🔴 **Crítica**: Bloquea producción/usuarios
+   - 🟡 **Alta**: Afecta funcionalidad importante
+   - 🟢 **Media**: Mejora significativa
+   - 🔵 **Baja**: Nice to have
+
+3. **Estimar effort:**
+   - 🟢 **1-2 días**
+   - 🟡 **3-5 días**
+   - 🔴 **1+ semana**
+   - 🟣 **Épica** (dividir en subtasks)
+
+4. **Asignar a Sprint actual o Backlog**
+
+---
+
+## 💻 FASE 2: Desarrollo
+
+### 2.1 Tomar Ownership del Issue
+
+**📋 El desarrollador asignado debe:**
+
+1. **Leer completamente el issue**
+2. **Comentar en el issue:**
+   ```
+   🎯 Tomando ownership de este issue
+   📅 ETA: [fecha estimada]
+   ❓ Preguntas: [si las hay]
+   ```
+3. **Cambiar label** de `needs-triage` a `in-progress`
+4. **Mover en GitHub Project** a columna "In Progress"
+
+### 2.2 Branching Strategy
+
+**🌿 Convención de nombres:**
+```bash
+# Para features
 feature/ISS-123-nueva-funcionalidad
 
 # Para bugs  
@@ -114,378 +120,492 @@ task/ISS-321-actualizar-componente-jr
 
 # Para refactor/arquitectura
 refactor/ISS-654-optimizar-queries
-</code></pre>
-<p><strong>📝 Crear branch:</strong></p>
-<pre><code class="language-bash"># Desde main/master actualizado
+```
+
+**📝 Crear branch:**
+```bash
+# Desde main/master actualizado
 git checkout main
 git pull origin main
+```
 
-# Crear nueva branch
-git checkout -b feature/ISS-123-nueva-funcionalidad
+---
 
-# Push inicial
-git push -u origin feature/ISS-123-nueva-funcionalidad
-</code></pre>
-<h3>2.3 Desarrollo con Mejores Prácticas</h3>
-<h4>🔄 Commits Convencionales</h4>
-<pre><code class="language-bash"># Tipos permitidos:
-feat: nueva funcionalidad
-fix: correción de bug
-docs: documentación
-style: formateo (no afecta lógica)
-refactor: refactorización de código
-test: agregar/modificar tests
-chore: tareas de mantenimiento
+## 📋 Flujo para atender un Issues
 
-# Formato:
-git commit -m "feat(frontend): add user login validation
+### 🌟 Flujo Principal (Feature/BugFix)
 
-- Add email format validation
-- Add password strength requirements  
-- Improve error messaging
+#### 1️⃣ Asegurarse que development está actualizado
+```bash
+git checkout development
+git pull origin development
+```
+
+#### 2️⃣ Verificar que main también está sync (buena práctica)
+```bash
+git checkout main 
+git pull origin main
+```
+
+#### 3️⃣ Volver a development como base
+```bash
+git checkout development
+```
+
+#### 4️⃣ Crear branch desde development (NO desde main)
+
+**🆕 Para Features:**
+```bash
+git checkout -b feature/ISS-123-user-login-validation
+```
+
+**🐛 Para Bug Fixes:**
+```bash
+git checkout -b bugfix/ISS-456-fix-password-reset-email
+```
+
+#### 5️⃣ Verificar que estás en la rama correcta
+```bash
+git branch
+# * feature/ISS-123-user-login-validation
+#   development  
+#   main
+```
+
+#### 6️⃣ Push inicial
+```bash
+git push -u origin feature/ISS-123-user-login-validation
+```
+
+#### 7️⃣ Desarrollo con commits frecuentes
+
+**🆕 Ejemplo para Feature:**
+```bash
+git add .
+git commit -m "feat(auth): add email validation logic
+
+- Implement email format validation
+- Add error messaging
 - Update tests
 
-Closes #123"
-</code></pre>
-<h4>🧪 Testing Requirements</h4>
-<p><strong>Antes de crear PR:</strong></p>
-<p><strong>Frontend:</strong></p>
-<ul>
-<li>✅ Componentes renderizan correctamente</li>
-<li>✅ Funcionalidad básica probada</li>
-<li>✅ Responsive design verificado</li>
-<li>✅ No errores en consola</li>
-</ul>
-<p><strong>Backend:</strong></p>
-<ul>
-<li>✅ Unit tests para nueva funcionalidad</li>
-<li>✅ Integration tests para endpoints</li>
-<li>✅ Postman/API tests documentados</li>
-<li>✅ Performance acceptable</li>
-</ul>
-<p><strong>Desktop:</strong></p>
-<ul>
-<li>✅ Funcionalidad en Windows 10/11</li>
-<li>✅ Compatibilidad con .NET target</li>
-<li>✅ No memory leaks</li>
-<li>✅ Instalador actualizado (si necesario)</li>
-</ul>
-<h3>2.4 Comunicación Durante Desarrollo</h3>
-<h4>🆘 Escalación por Complejidad</h4>
-<p><strong>Si encuentras blocker:</strong></p>
-<ol>
-<li><strong>Intentar resolver por 2-4 horas</strong></li>
-<li><strong>Documentar el problema:</strong>
-<pre><code>🚨 BLOCKER en #123Problema: [descripción técnica]Intentado: [lo que ya probaste]Contexto: [información relevante]Ayuda necesaria: [específica]
-</code></pre></li>
-<li><strong>Escalación según jerarquía:</strong>
-<ul>
-<li><strong>Brayan (Frontend Jr)</strong> → Andrés → Sebastián</li>
-<li><strong>Brian (Backend Jr)</strong> → Sebastián</li>
-<li><strong>Andrés (Fullstack)</strong> → Sebastián (solo arquitectura crítica)</li>
-</ul>
-</li>
-</ol>
-<h4>📅 Updates Regulares</h4>
-<p><strong>Daily progress (Slack/Teams):</strong></p>
-<pre><code>📍 Update ISS-123
-✅ Completado: [tareas del día]
-🚧 En progreso: [tarea actual]  
-📅 Próximo: [plan para mañana]
-❓ Blockers: [si los hay]
-</code></pre>
-<hr>
-<h2>🔍 FASE 3: Code Review</h2>
-<h3>3.1 Crear Pull Request</h3>
-<p><strong>📋 PR Template obligatorio:</strong></p>
-<pre><code class="language-markdown">## Issue
-Closes #123
+Related to #123"
+```
 
-## Descripción
-Descripción clara de los cambios realizados.
+**🐛 Ejemplo para BugFix:**
+```bash
+git add .
+git commit -m "fix(auth): resolve password reset email issue
 
-## Tipo de cambio
-- [ ] Bug fix (non-breaking change)
-- [ ] New feature (non-breaking change)  
-- [ ] Breaking change (fix o feature que causa que funcionalidad existente no funcione)
-- [ ] Documentación
+- Fix email template loading error
+- Update SMTP configuration
+- Add error handling for failed sends
 
-## Checklist
-- [ ] Mi código sigue las convenciones del proyecto
-- [ ] He hecho self-review de mi código
-- [ ] He comentado mi código en áreas complejas
-- [ ] He actualizado la documentación  
-- [ ] Mis cambios no generan warnings
-- [ ] He agregado tests que prueban mi fix/feature
-- [ ] Tests nuevos y existentes pasan localmente
+Fixes #456"
+```
 
-## Testing realizado
-- [ ] Frontend: Probado en Chrome, Firefox, Safari
-- [ ] Backend: Unit tests, integration tests, Postman
-- [ ] Desktop: Probado en Windows 10/11
+#### 8️⃣ Push diario para backup
+```bash
+git push origin feature/ISS-123-user-login-validation
+```
 
-## Screenshots/GIFs
-[Si aplica para cambios visuales]
-</code></pre>
-<h3>3.2 Jerarquía de Review</h3>
-<h4>🎯 Matriz de Revisión</h4>
+#### 9️⃣ Crear Pull Request a development
 
-Desarrollador | Primer Review | Segundo Review | Deployment Approval
--- | -- | -- | --
-Brayan (FE Jr) | Andrés | Sebastián (si crítico) | Andrés
-Brian (BE Jr) | Sebastián | - | Sebastián
-Andrés (Fullstack) | Sebastián | - | Sebastián
-Sebastián (Leader) | Auto-approve* | - | Auto-approve
+##### 🎯 Paso a paso en GitHub:
 
+**1. 🌐 Ir a GitHub y navegar al repositorio**
+```
+https://github.com/tu-usuario/tu-repositorio
+```
 
-<p>*Solo para cambios menores. Arquitectura debe revisarse con el equipo.</p>
-<h4>📋 Review Checklist</h4>
-<p><strong>🎨 Frontend Review (Andrés revisa a Brayan):</strong></p>
-<ul>
-<li>✅ <strong>Funcionalidad</strong>: ¿Cumple requirements?</li>
-<li>✅ <strong>UI/UX</strong>: ¿Sigue design system?</li>
-<li>✅ <strong>Performance</strong>: ¿No degrada rendimiento?</li>
-<li>✅ <strong>Responsive</strong>: ¿Funciona en mobile/tablet?</li>
-<li>✅ <strong>Accessibility</strong>: ¿Es accesible?</li>
-<li>✅ <strong>Code Quality</strong>: ¿Está bien estructurado?</li>
-<li>✅ <strong>Testing</strong>: ¿Está bien probado?</li>
-</ul>
-<p><strong>⚙️ Backend Review (Sebastián revisa a Brian):</strong></p>
-<ul>
-<li>✅ <strong>Arquitectura</strong>: ¿Sigue patrones establecidos?</li>
-<li>✅ <strong>Security</strong>: ¿No introduce vulnerabilidades?</li>
-<li>✅ <strong>Performance</strong>: ¿Queries optimizadas?</li>
-<li>✅ <strong>API Design</strong>: ¿RESTful/consistente?</li>
-<li>✅ <strong>Error Handling</strong>: ¿Maneja errores apropiadamente?</li>
-<li>✅ <strong>Documentation</strong>: ¿APIs documentadas?</li>
-<li>✅ <strong>Testing</strong>: ¿Unit + integration tests?</li>
-</ul>
-<h3>3.3 Proceso de Review</h3>
-<pre><code>1. PR creado → Notification automática a reviewer
-2. Reviewer tiene 24h para initial review
-3. Feedback → Developer corrige → Re-review
-4. Approval → Merge autorizado
-5. Si no response en 24h → Escalate en Slack
-</code></pre>
-<h3>3.4 Review Comments Guidelines</h3>
-<p><strong>🟢 Aprobación:</strong></p>
-<pre><code>✅ LGTM! Excelente trabajo con [aspecto específico]
-Sugerencia menor: [opcional improvement]
-</code></pre>
-<p><strong>🟡 Cambios menores:</strong></p>
-<pre><code>🔄 Request Changes
-- Fix: [issue específico con línea de código]
-- Improve: [sugerencia de mejora]
-- Consider: [alternativa a considerar]
-</code></pre>
-<p><strong>🔴 Cambios mayores:</strong></p>
-<pre><code>❌ Major Issues Found
-- BLOCKER: [issue que debe corregirse]
-- SECURITY: [problema de seguridad]
-- ARCHITECTURE: [problema de diseño]
+**2. 🔍 GitHub detectará automáticamente tu nueva rama**
+- Verás un banner amarillo: "feature/ISS-123-user-login-validation had recent pushes"
+- Click en **"Compare & pull request"**
 
-Suggested approach: [sugerencia de solución]
-Let's discuss offline.
-</code></pre>
-<hr>
-<h2>🚀 FASE 4: Testing y QA</h2>
-<h3>4.1 Merge a Development</h3>
-<p><strong>Una vez aprobado el PR:</strong></p>
-<pre><code class="language-bash"># Merge strategy: Squash and merge (para historia limpia)
+**3. 🔄 Si no aparece el banner automático:**
+- Click en **"Pull requests"** tab
+- Click en **"New pull request"**
+- Seleccionar:
+  - **Base:** `development` ← **Compare:** `feature/ISS-123-user-login-validation`
+
+**4. 📝 Completar el formulario del PR:**
+
+**🏷️ Título del PR:**
+```
+feat(auth): Add user login validation - ISS-123
+```
+
+**📄 Descripción del PR (Template):**
+```markdown
+## 📋 Descripción
+Brief description of what this PR does.
+
+## 🎯 Issue relacionado
+- Related to #123
+- [Link to issue](https://github.com/user/repo/issues/123)
+
+## 🔄 Tipo de cambio
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [x] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+
+## ✅ Cambios realizados
+- [x] Implement email validation logic
+- [x] Add error messaging for invalid emails
+- [x] Update unit tests
+- [x] Update documentation
+
+## 🧪 Testing
+- [x] Unit tests pass
+- [x] Integration tests pass
+- [x] Manual testing completed
+
+## 📸 Screenshots (si aplica)
+[Add screenshots of UI changes]
+
+## 📝 Checklist
+- [x] Code follows project style guidelines
+- [x] Self-review completed
+- [x] Tests added/updated
+- [x] Documentation updated
+- [x] No breaking changes
+```
+
+**5. ⚙️ Configurar opciones del PR:**
+
+**👥 Reviewers:**
+- Click en ⚙️ junto a "Reviewers"
+- Seleccionar team members o usuarios específicos
+- Ejemplo: `@tech-lead`, `@senior-dev`
+
+**👤 Assignees:**
+- Asignarte a ti mismo como responsable
+
+**🏷️ Labels:**
+- `feature` para nuevas funcionalidades
+- `bugfix` para corrección de bugs
+- `priority: high/medium/low`
+- `size: small/medium/large`
+
+**📊 Projects:**
+- Asociar con el proyecto correspondiente si usas GitHub Projects
+
+**🎯 Milestone:**
+- Asociar con el sprint o milestone actual
+
+**6. ✨ Crear el Pull Request:**
+- Click en **"Create pull request"**
+
+**7. 📢 Después de crear el PR:**
+
+**🔔 Notificar al equipo:**
+- En Slack/Teams: "PR ready for review: [link]"
+- Tag a los reviewers si es necesario
+
+**📈 Seguimiento:**
+- Responder a comentarios de reviewers
+- Hacer cambios solicitados
+- Push cambios adicionales a la misma rama
+
+---
+
+## 🎨 Mejores Prácticas para Pull Requests
+
+### 📝 Template automático para PRs
+
+**📁 Crear archivo `.github/pull_request_template.md`:**
+```markdown
+## 📋 Descripción
+<!-- Brief description of what this PR does -->
+
+## 🎯 Issue relacionado
+<!-- Link to issue: Fixes #123, Related to #456 -->
+
+## 🔄 Tipo de cambio
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+
+## ✅ Cambios realizados
+<!-- List of changes made -->
+
+## 🧪 Testing
+- [ ] Unit tests pass
+- [ ] Integration tests pass
+- [ ] Manual testing completed
+
+## 📝 Checklist
+- [ ] Code follows project style guidelines
+- [ ] Self-review completed
+- [ ] Tests added/updated
+- [ ] Documentation updated
+- [ ] No breaking changes
+```
+
+### 🔍 Review Process
+
+**👨‍💻 Para Reviewers:**
+1. **🎯 Code Quality Check:**
+   - Lógica correcta
+   - Estilo de código consistente
+   - Manejo de errores adecuado
+   - Performance considerations
+
+2. **🧪 Testing Verification:**
+   - Tests cubren casos edge
+   - Tests pasan localmente
+   - No hay regression
+
+3. **🔒 Security Review:**
+   - No hay vulnerabilidades
+   - Input validation adecuada
+   - Credentials no hardcodeadas
+
+**✍️ Para Author (después de feedback):**
+1. **💬 Responder a comentarios:**
+   - Hacer cambios solicitados
+   - Explicar decisiones si no se cambia algo
+   - Resolver todas las conversaciones
+
+2. **🔄 Push cambios adicionales:**
+   ```bash
+   git add .
+   git commit -m "fix: address review feedback
+   
+   - Update error handling logic
+   - Add missing test cases
+   - Fix code style issues"
+   
+   git push origin feature/ISS-123-user-login-validation
+   ```
+
+3. **🔁 Re-request review:**
+   - En GitHub, click "Re-request review" 
+   - Notificar que cambios están listos
+
+### 🚨 Troubleshooting común
+
+**⚠️ Problema: Conflicts en el PR**
+```bash
+# 1. Actualizar tu rama local
+git checkout feature/ISS-123-user-login-validation
+git fetch origin
+git merge origin/development
+
+# 2. Resolver conflicts manualmente
+# 3. Commit la resolución
+git add .
+git commit -m "resolve merge conflicts with development"
+
+# 4. Push la resolución
+git push origin feature/ISS-123-user-login-validation
+```
+
+**📦 Problema: PR muy grande**
+- Dividir en múltiples PRs más pequeños
+- Usar draft PRs para trabajo en progreso
+- Crear PRs incrementales
+
+**🔧 Problema: CI/CD falla**
+```bash
+# Ver logs en GitHub Actions/CI
+# Fix issues localmente
+git add .
+git commit -m "fix: resolve CI issues"
+git push origin feature/ISS-123-user-login-validation
+```
+
+**📅 Problema: Branch desactualizada**
+```bash
+# Rebase para limpiar historial
+git checkout feature/ISS-123-user-login-validation
+git rebase origin/development
+git push --force-with-lease origin feature/ISS-123-user-login-validation
+```
+
+### 📊 GitHub Features útiles
+
+**✏️ Draft PRs:**
+- Para trabajo en progreso
+- No asignar reviewers hasta que esté listo
+- Convertir a ready cuando esté completo
+
+**🤖 Auto-merge:**
+- Configurar auto-merge después de aprobaciones
+- Solo para PRs no críticos
+
+**🛡️ Branch protection rules:**
+- Require review before merge
+- Require status checks
+- Restrict pushes to main/development
+
+**⌨️ GitHub CLI (opcional):**
+```bash
+# Instalar GitHub CLI
+# Crear PR desde terminal
+gh pr create --title "feat(auth): Add login validation" --body "Related to #123"
+
+# Ver status de PRs
+gh pr status
+
+# Merge PR desde terminal
+gh pr merge 123 --squash
+```
+
+---
+
+## 🔥 Flujo para HotFix (Urgente - Producción)
+
+### 🚨 Proceso de Emergencia
+
+#### 1️⃣ Asegurarse que main está actualizado
+```bash
 git checkout main
 git pull origin main
-git merge --squash feature/ISS-123-nueva-funcionalidad
-git commit -m "feat: implement user login validation (#123)"
-git push origin main
-</code></pre>
-<h3>4.2 Deployment Automático a Staging</h3>
-<p><strong>🔄 CI/CD Pipeline se dispara:</strong></p>
-<ol>
-<li><strong>Linting + Tests</strong> (debe pasar 100%)</li>
-<li><strong>Build</strong> (debe ser exitoso)</li>
-<li><strong>Deploy to Staging</strong> (automático)</li>
-<li><strong>Integration Tests</strong> (automáticos)</li>
-<li><strong>Notify en Slack</strong> con staging URL</li>
-</ol>
-<h3>4.3 QA Testing en Staging</h3>
-<p><strong>📋 QA Checklist:</strong></p>
-<p><strong>Frontend:</strong></p>
-<ul>
-<li>✅ <strong>Functionality</strong>: Feature funciona como expected</li>
-<li>✅ <strong>Cross-browser</strong>: Chrome, Firefox, Safari, Edge</li>
-<li>✅ <strong>Responsive</strong>: Mobile, tablet, desktop</li>
-<li>✅ <strong>Performance</strong>: Load times acceptable</li>
-<li>✅ <strong>Accessibility</strong>: Screen readers, keyboard navigation</li>
-</ul>
-<p><strong>Backend:</strong></p>
-<ul>
-<li>✅ <strong>API Testing</strong>: Postman collection pasa</li>
-<li>✅ <strong>Load Testing</strong>: Performance bajo carga</li>
-<li>✅ <strong>Security Testing</strong>: Vulnerability scan</li>
-<li>✅ <strong>Integration</strong>: Con otros servicios</li>
-</ul>
-<p><strong>Desktop:</strong></p>
-<ul>
-<li>✅ <strong>Installation</strong>: Clean install en fresh Windows</li>
-<li>✅ <strong>Functionality</strong>: Core features funcionan</li>
-<li>✅ <strong>Performance</strong>: No memory leaks, responsive UI</li>
-<li>✅ <strong>Compatibility</strong>: Diferentes versiones Windows</li>
-</ul>
-<h3>4.4 Issue Closure</h3>
-<p><strong>✅ Criteria para cerrar issue:</strong></p>
-<ol>
-<li><strong>Functionality verified</strong> en staging</li>
-<li><strong>QA sign-off</strong> completo</li>
-<li><strong>Performance acceptable</strong></li>
-<li><strong>No regressions</strong> detectadas</li>
-<li><strong>Documentation updated</strong> (si necesario)</li>
-</ol>
-<hr>
-<h2>🌟 FASE 5: Producción</h2>
-<h3>5.1 Release Planning</h3>
-<p><strong>📅 Release Schedule:</strong></p>
-<ul>
-<li><strong>Hotfixes</strong>: Inmediato (solo bugs críticos)</li>
-<li><strong>Minor releases</strong>: Semanal (viernes 5pm)</li>
-<li><strong>Major releases</strong>: Quincenal/mensual (coordinado)</li>
-</ul>
-<h3>5.2 Pre-Production Checklist</h3>
-<p><strong>🔍 Sebastián debe verificar:</strong></p>
-<ul>
-<li>✅ <strong>All tests passing</strong> en staging</li>
-<li>✅ <strong>Performance metrics</strong> dentro de SLA</li>
-<li>✅ <strong>Security scan</strong> limpio</li>
-<li>✅ <strong>Database migrations</strong> preparadas (si aplica)</li>
-<li>✅ <strong>Rollback plan</strong> documentado</li>
-<li>✅ <strong>Monitoring</strong> configurado para nuevas features</li>
-</ul>
-<h3>5.3 Deployment Process</h3>
-<h4>🔄 Deployment Strategy por Proyecto</h4>
-<p><strong>Frontend (prisma-web, abaco-web, observatorio-web):</strong></p>
-<pre><code class="language-bash"># Blue-Green deployment
-1. Build production bundle
-2. Deploy to green environment  
-3. Run smoke tests
-4. Switch traffic (blue → green)
-5. Monitor for 30 min
-6. Keep blue as rollback
-</code></pre>
-<p><strong>Backend (prisma-api, abaco-api):</strong></p>
-<pre><code class="language-bash"># Rolling deployment
-1. Deploy to staging servers
-2. Run database migrations
-3. Deploy to 50% production servers
-4. Monitor metrics and logs
-5. Deploy to remaining 50%
-6. Full traffic to new version
-</code></pre>
-<p><strong>Desktop (prisma-desktop, abaco-desktop):</strong></p>
-<pre><code class="language-bash"># Staged rollout
-1. Build and sign installer
-2. Deploy to beta channel (10% users)
-3. Monitor crash reports
-4. Deploy to stable channel (90% users)
-5. Auto-update notification
-</code></pre>
-<h3>5.4 Post-Deployment Monitoring</h3>
-<p><strong>📊 Sebastián supervisa por 2 horas:</strong></p>
-<ul>
-<li><strong>Error rates</strong> (must be &lt; baseline)</li>
-<li><strong>Response times</strong> (must be &lt; SLA)</li>
-<li><strong>User feedback</strong> (support tickets, reviews)</li>
-<li><strong>System metrics</strong> (CPU, memory, disk)</li>
-</ul>
-<h3>5.5 Rollback Procedures</h3>
-<p><strong>🚨 Rollback criteria:</strong></p>
-<ul>
-<li>Error rate &gt; 5% increase</li>
-<li>Response time &gt; 2x baseline</li>
-<li>Critical functionality broken</li>
-<li>Security vulnerability detected</li>
-</ul>
-<p><strong>⚡ Rollback process (&lt; 15 min):</strong></p>
-<pre><code class="language-bash"># Frontend: Switch traffic back
-# Backend: Deploy previous version
-# Desktop: Revert auto-update, notify users
-# Database: Run rollback migrations (if needed)
-</code></pre>
-<hr>
-<h2>📊 FASE 6: Post-Production</h2>
-<h3>6.1 Issue Closure y Documentation</h3>
-<p><strong>✅ Final steps:</strong></p>
-<ol>
-<li><strong>Update issue</strong> con staging/production URLs</li>
-<li><strong>Close issue</strong> con comment:
-<pre><code>✅ RESOLVED IN PRODUCTION📅 Deployed: [date]🔗 URLs: [production links]📊 Metrics: [performance data]
-</code></pre></li>
-<li><strong>Update documentation</strong> (if needed)</li>
-<li><strong>Notify stakeholders</strong></li>
-</ol>
-<h3>6.2 Retrospective Data</h3>
-<p><strong>📈 Track metrics:</strong></p>
-<ul>
-<li><strong>Lead time</strong>: Issue creation → Production</li>
-<li><strong>Cycle time</strong>: Development start → Production</li>
-<li><strong>Defect rate</strong>: Bugs found post-production</li>
-<li><strong>Team velocity</strong>: Story points per sprint</li>
-</ul>
-<h3>6.3 Knowledge Sharing</h3>
-<p><strong>📚 Weekly team meeting (viernes 4pm):</strong></p>
-<ul>
-<li><strong>What went well</strong> this week</li>
-<li><strong>Challenges faced</strong> and solutions</li>
-<li><strong>Lessons learned</strong> for next sprint</li>
-<li><strong>Architectural decisions</strong> made</li>
-<li><strong>New tools/techniques</strong> discovered</li>
-</ul>
-<hr>
-<h2>⚡ Escalación y Comunicación</h2>
-<h3>🆘 Emergency Escalation</h3>
-<p><strong>Production down or critical bug:</strong></p>
-<pre><code>1. Create CRITICAL issue immediately
-2. Notify in #emergencies Slack channel
-3. Page Sebastián (if after hours)
-4. Assemble war room if needed
-5. Fix, test, deploy ASAP
-6. Post-mortem within 48h
-</code></pre>
-<h3>📱 Communication Channels</h3>
-<ul>
-<li><strong>#daily-updates</strong>: Progress reports</li>
-<li><strong>#code-reviews</strong>: PR notifications</li>
-<li><strong>#deployments</strong>: Release notifications</li>
-<li><strong>#emergencies</strong>: Critical issues only</li>
-<li><strong>#random</strong>: Team building, non-work</li>
-</ul>
-<h3>📋 Regular Ceremonies</h3>
-<ul>
-<li><strong>Daily standup</strong>: Lunes/Miércoles/Viernes 9:00 AM (15 min)</li>
-<li><strong>Sprint planning</strong>: Cada 2 semanas, lunes 10:00 AM (60 min)</li>
-<li><strong>Sprint review</strong>: Viernes antes de planning (30 min)</li>
-<li><strong>Retrospective</strong>: Viernes después de review (30 min)</li>
-<li><strong>Technical review</strong>: Según necesidad (Sebastián convoca)</li>
-</ul>
-<hr>
-<h2>🎯 KPIs y Métricas de Éxito</h2>
-<h3>📊 Team Metrics</h3>
-<ul>
-<li><strong>Lead Time</strong>: &lt; 7 días promedio</li>
-<li><strong>Cycle Time</strong>: &lt; 3 días promedio</li>
-<li><strong>Defect Rate</strong>: &lt; 5% bugs post-production</li>
-<li><strong>Test Coverage</strong>: &gt; 80% backend, &gt; 70% frontend</li>
-<li><strong>Code Review Time</strong>: &lt; 24 horas promedio</li>
-</ul>
-<h3>🎖️ Individual Metrics</h3>
-<ul>
-<li><strong>Sebastián</strong>: Architecture decisions, team mentoring, critical issues</li>
-<li><strong>Andrés</strong>: Feature delivery, frontend quality, Brayan's growth</li>
-<li><strong>Brian</strong>: Code quality improvement, learning velocity</li>
-<li><strong>Brayan</strong>: Feature delivery, code quality improvement</li>
-</ul>
-<h3>🏆 Quality Metrics</h3>
-<ul>
-<li><strong>Production Stability</strong>: &gt; 99.5% uptime</li>
-<li><strong>Performance</strong>: &lt; 2s load times</li>
-<li><strong>Security</strong>: Zero critical vulnerabilities</li>
-<li><strong>User Satisfaction</strong>: &gt; 4.5/5 app store ratings</li>
-</ul></body></html>
+```
+
+#### 2️⃣ Crear branch desde main (NO desde development)
+```bash
+git checkout -b hotfix/ISS-789-critical-security-patch
+```
+
+#### 3️⃣ Verificar que estás en la rama correcta
+```bash
+git branch
+# * hotfix/ISS-789-critical-security-patch
+#   development  
+#   main
+```
+
+#### 4️⃣ Push inicial
+```bash
+git push -u origin hotfix/ISS-789-critical-security-patch
+```
+
+#### 5️⃣ Implementar el fix urgente
+```bash
+git add .
+git commit -m "hotfix(security): patch critical vulnerability
+
+- Fix SQL injection in user query
+- Update input sanitization
+- Add security tests
+
+URGENT: Fixes #789"
+```
+
+#### 6️⃣ Push del hotfix
+```bash
+git push origin hotfix/ISS-789-critical-security-patch
+```
+
+#### 7️⃣ Crear Pull Request a main (URGENTE)
+
+##### 🆘 Paso a paso para HotFix:
+
+**1. 🚨 Crear PR en GitHub:**
+- Base: `main` ← Compare: `hotfix/ISS-789-critical-security-patch`
+
+**2. 🔥 Título del PR:**
+```
+🚨 HOTFIX(security): Critical security patch - ISS-789
+```
+
+**3. 📋 Descripción del PR (Template para HotFix):**
+```markdown
+## 🚨 HOTFIX CRÍTICO
+
+### 🔥 Problema
+Brief description of the critical issue being fixed.
+
+### 🎯 Issue relacionado
+- Fixes #789 (CRITICAL)
+- [Link to issue](https://github.com/user/repo/issues/789)
+
+### ⚡ Solución implementada
+- [x] Fix SQL injection vulnerability
+- [x] Update input sanitization
+- [x] Add security tests
+- [x] Verify fix in staging
+
+### 🧪 Testing de emergencia
+- [x] Security tests pass
+- [x] Critical path tested
+- [x] No regression detected
+
+### 📋 Impact Assessment
+- **Sistemas afectados:** Production API
+- **Usuarios impactados:** All users
+- **Downtime esperado:** 0 minutes
+- **Rollback plan:** Available
+
+### ✅ Checklist HOTFIX
+- [x] Issue is critical/blocking production
+- [x] Fix is minimal and targeted
+- [x] Testing completed
+- [x] Staging deployment successful
+- [x] Rollback plan ready
+```
+
+**4. ⚡ Configurar PR urgente:**
+- **👥 Reviewers:** Solo reviewers senior/tech leads
+- **🏷️ Labels:** `hotfix`, `critical`, `security`
+- **🔴 Priority:** URGENT
+
+**5. 🏃‍♂️ Proceso acelerado:**
+- Notificar inmediatamente en canales de emergencia
+- Review express (max 30 minutos)
+- Merge directo después de aprobación
+
+**6. 🚀 Post-merge inmediato:**
+- Deploy a producción
+- Monitoreo intensivo
+- Notificar resolución del incidente
+
+#### 8️⃣ Sincronizar development con el hotfix
+```bash
+# Después del merge a main
+git checkout development
+git pull origin development
+git merge main  # Traer el hotfix a development
+git push origin development
+```
+
+---
+
+## 🏷️ Convenciones de Naming
+
+### 🌿 Branches
+- **🆕 Features:** `feature/ISS-{número}-{descripción-corta}`
+- **🐛 Bug Fixes:** `bugfix/ISS-{número}-{descripción-corta}`
+- **🔥 Hot Fixes:** `hotfix/ISS-{número}-{descripción-corta}`
+
+### 📝 Commits
+- **🆕 Features:** `feat(scope): descripción`
+- **🐛 Bug Fixes:** `fix(scope): descripción`
+- **🔥 Hot Fixes:** `hotfix(scope): descripción`
+
+### 🎯 Ejemplos de Scopes
+- `auth` 🔐 - Autenticación
+- `ui` 🎨 - Interfaz de usuario
+- `api` 🌐 - API/Backend
+- `db` 🗄️ - Base de datos
+- `security` 🔒 - Seguridad
+- `performance` ⚡ - Rendimiento
+
+---
+
+## ⚠️ Notas Importantes
+
+### 🚫 **NUNCA crear features/bugfix desde main**
+- ✅ Siempre usar `development` como base para features y bugfix
+- ⚠️ Solo usar `main` para hotfix críticos
+
+### 📋 **Issues deben estar vinculados**
+- 🆕 Usar `Related to #123` para features
+- 🐛 Usar `Fixes #456` para bugfix y hotfix
+
+### 🔄 **Pull Requests**
+- 🆕🐛 Features/BugFix → `development`
+- 🔥 HotFix → `main` (luego sincronizar con development)
