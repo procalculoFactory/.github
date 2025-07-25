@@ -137,7 +137,10 @@ git pull origin main
 
 #### 1️⃣ Asegurarse que development está actualizado
 
-
+Sincronizar git desde el origen 
+```bash
+git pull origin
+```
 Cambiar a development
 ```bash
 git checkout development
