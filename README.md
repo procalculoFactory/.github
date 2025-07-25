@@ -141,11 +141,13 @@ git checkout development
 git pull origin development
 ```
 #### 🔍 Métodos para verificar sincronización
-## 1️⃣ Método rápido - Comparar commits
-```bash# Actualizar referencias remotas primero
+#### Método rápido - Comparar commits
+
+#### Actualizar referencias remotas primero
+```bash
 git fetch origin
 ```
-## Verificar si development está detrás de main
+#### Verificar si development está detrás de main
 ```bash
 git log development..origin/main --oneline
 ```
