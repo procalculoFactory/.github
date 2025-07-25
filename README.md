@@ -140,6 +140,19 @@ git pull origin main
 git checkout development
 git pull origin development
 ```
+#### 🔍 Métodos para verificar sincronización
+## 1️⃣ Método rápido - Comparar commits
+```bash# Actualizar referencias remotas primero
+git fetch origin
+```
+## Verificar si development está detrás de main
+```bash
+git log development..origin/main --oneline
+```
+📊 Interpretación:
+
+Sin output = development está actualizado ✅
+Muestra commits = development está desactualizado ❌
 
 #### 2️⃣ Verificar que main también está sync (buena práctica)
 ```bash
