@@ -136,29 +136,29 @@ git pull origin main
 
 ### 🌟 Flujo Principal (Feature/BugFix)
 
-#### 1️⃣ Asegurarse que development está actualizado
+#### 1️⃣ Asegurarse que develop está actualizado
 
 Sincronizar git desde el origen 
 ```bash
 git pull origin
 ```
-Cambiar a development
+Cambiar a develop
 ```bash
-git checkout development
+git checkout develop
 ```
-Hacer merge de main en development
+Hacer merge de main en develop
 ```bash
 git merge main
 ```
 Subir los cambios a GitHub
 ```bash
-git push origin development
+git push origin develop
 ```
 Verificar que estás en la rama correcta
 ```bash
 git branch
 ```
-#### 4️⃣ Crear branch desde development (NO desde main)
+#### 4️⃣ Crear branch desde develop (NO desde main)
 
 **🆕 Para Features:**
 ```bash
@@ -174,7 +174,7 @@ git checkout -b bugfix/ISS-456-fix-password-reset-email
 ```bash
 git branch
 # * feature/ISS-123-user-login-validation
-#   development  
+#   develop  
 #   main
 ```
 
@@ -214,7 +214,7 @@ Fixes #456"
 git push origin feature/ISS-123-user-login-validation
 ```
 
-#### 9️⃣ Crear Pull Request a development
+#### 9️⃣ Crear Pull Request a develop
 
 ##### 🎯 Paso a paso en GitHub:
 
@@ -231,7 +231,7 @@ https://github.com/tu-usuario/tu-repositorio
 - Click en **"Pull requests"** tab
 - Click en **"New pull request"**
 - Seleccionar:
-  - **Base:** `development` ← **Compare:** `feature/ISS-123-user-login-validation`
+  - **Base:** `develop` ← **Compare:** `feature/ISS-123-user-login-validation`
 
 **4. 📝 Completar el formulario del PR:**
 
@@ -397,12 +397,12 @@ Brief description of what this PR does.
 # 1. Actualizar tu rama local
 git checkout feature/ISS-123-user-login-validation
 git fetch origin
-git merge origin/development
+git merge origin/develop
 
 # 2. Resolver conflicts manualmente
 # 3. Commit la resolución
 git add .
-git commit -m "resolve merge conflicts with development"
+git commit -m "resolve merge conflicts with develop"
 
 # 4. Push la resolución
 git push origin feature/ISS-123-user-login-validation
@@ -426,7 +426,7 @@ git push origin feature/ISS-123-user-login-validation
 ```bash
 # Rebase para limpiar historial
 git checkout feature/ISS-123-user-login-validation
-git rebase origin/development
+git rebase origin/develop
 git push --force-with-lease origin feature/ISS-123-user-login-validation
 ```
 
@@ -444,7 +444,7 @@ git push --force-with-lease origin feature/ISS-123-user-login-validation
 **🛡️ Branch protection rules:**
 - Require review before merge
 - Require status checks
-- Restrict pushes to main/development
+- Restrict pushes to main/develop
 
 **⌨️ GitHub CLI (opcional):**
 ```bash
@@ -471,7 +471,7 @@ git checkout main
 git pull origin main
 ```
 
-#### 2️⃣ Crear branch desde main (NO desde development)
+#### 2️⃣ Crear branch desde main (NO desde develop)
 ```bash
 git checkout -b hotfix/ISS-789-critical-security-patch
 ```
@@ -480,7 +480,7 @@ git checkout -b hotfix/ISS-789-critical-security-patch
 ```bash
 git branch
 # * hotfix/ISS-789-critical-security-patch
-#   development  
+#   develop  
 #   main
 ```
 
@@ -569,13 +569,13 @@ Brief description of the critical issue being fixed.
 - Monitoreo intensivo
 - Notificar resolución del incidente
 
-#### 8️⃣ Sincronizar development con el hotfix
+#### 8️⃣ Sincronizar develop con el hotfix
 ```bash
 # Después del merge a main
-git checkout development
-git pull origin development
-git merge main  # Traer el hotfix a development
-git push origin development
+git checkout develop
+git pull origin develop
+git merge main  # Traer el hotfix a develop
+git push origin develop
 ```
 
 ---
@@ -605,7 +605,7 @@ git push origin development
 ## ⚠️ Notas Importantes
 
 ### 🚫 **NUNCA crear features/bugfix desde main**
-- ✅ Siempre usar `development` como base para features y bugfix
+- ✅ Siempre usar `develop` como base para features y bugfix
 - ⚠️ Solo usar `main` para hotfix críticos
 
 ### 📋 **Issues deben estar vinculados**
@@ -613,5 +613,5 @@ git push origin development
 - 🐛 Usar `Fixes #456` para bugfix y hotfix
 
 ### 🔄 **Pull Requests**
-- 🆕🐛 Features/BugFix → `development`
-- 🔥 HotFix → `main` (luego sincronizar con development)
+- 🆕🐛 Features/BugFix → `develop`
+- 🔥 HotFix → `main` (luego sincronizar con develop)
